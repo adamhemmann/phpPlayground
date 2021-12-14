@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/phpPlayground.css">
+    <link rel="stylesheet" href="../toDoList/css/toDoList.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+    <script src="js/phpPlayground.js"></script>
+    <title>PHP Playground</title>
+</head>
+<body>
+
+    <div class="container-fluid"> <!-- Top container -->
+        <div class="row">
+            <div class="col-sm-11">
+                <a href="../Projects.html">Back to Projects Page</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-3 mb-3" id="mainWrapper">
+        <div class="row text-center my-4">
+            <h2 id="listTitle">ashgx6 - PHP Playground</h2>
+        </div>
+        <div class="row mb-3">
+            <div class="col text-center">
+
+                <span>Please select function from the drop-down menu:</span>
+                <div class="my-3">
+                    <select name="functionPicker" id="functionPicker">
+                        <option value="none" selected disabled>Select a function to run on the server</option>
+                        <option value="name">Name Function</option>
+                        <option value="hamming">Hamming Function</option>
+                        <option value="password">Password Simulation Function</option>
+                        <option value="list">List Creator Function</option>
+                        <option value="cylinder">Cylinder Surface Area</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div id="inputsContainer">
+
+                <form id="inputForm" action="php/action.php" method="POST" target="_blank">
+                    
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
